@@ -1,28 +1,36 @@
-# AI Email Writer
+# AI Email Writer V1
 
 ## Overview
-AI Email Writer is a Python-based application that generates professional emails using Google's Gemini AI model. Users simply enter their email requirement, and the application creates a well-structured email with a subject, greeting, body, and closing.
+AI Email Writer V1 is an AI-powered application developed using Python and Google's Gemini AI. It helps users generate professional emails by selecting an email type and tone, then automatically creating a well-structured email.
 
 ## Features
-- Generate professional emails instantly
-- User-friendly command-line interface
-- AI-powered email content generation
-- Customizable email requests
-- Fast and efficient responses
+- AI-powered email generation
+- Multiple email types
+  - Leave Request
+  - Job Application
+  - Meeting Request
+  - General Email
+- Multiple tone options
+  - Professional
+  - Friendly
+  - Formal
+- Saves generated emails to a text file
+- Easy-to-use command-line interface
+- Error handling for smooth execution
 
 ## Technologies Used
 - Python
 - Google Gemini AI
-- python-dotenv
 - Google GenAI SDK
+- python-dotenv
 
 ## Project Structure
 
 AI-Email-Writer/
 │
 ├── main.py
-├── .gitignore
 ├── README.md
+├── .gitignore
 └── .env (not uploaded to GitHub)
 
 ## Installation
@@ -33,19 +41,13 @@ AI-Email-Writer/
 git clone https://github.com/shivagangakubre-dotcom/AI-Email-Writer.git
 ```
 
-2. Navigate to the project folder
-
-```bash
-cd AI-Email-Writer
-```
-
-3. Install dependencies
+2. Install dependencies
 
 ```bash
 pip install google-genai python-dotenv
 ```
 
-4. Create a `.env` file
+3. Create a `.env` file
 
 ```env
 GEMINI_API_KEY=YOUR_API_KEY
@@ -53,43 +55,39 @@ GEMINI_API_KEY=YOUR_API_KEY
 
 ## Usage
 
-Run the application:
+Run:
 
 ```bash
 python main.py
 ```
 
-Enter your email requirement when prompted.
+Follow the prompts:
+1. Select email type
+2. Select tone
+3. Enter email requirement
 
-Example:
-
-```text
-Request leave for 2 days due to fever
-```
-
-The AI will generate a complete professional email.
-
-## Example Output
-
-Subject: Leave Request Due to Illness
-
-Dear Sir/Madam,
-
-I am writing to request leave for two days due to fever. I am currently unwell and require rest for recovery.
-
-Thank you for your understanding.
-
-Sincerely,
-[Your Name]
+The AI will generate a professional email and save it to a file.
 
 ## Future Enhancements
-- Web-based interface using Streamlit
-- Multiple email tone options
-- Email templates
-- Download generated emails as PDF
+- Streamlit Web Interface
+- PDF Download Feature
+- Email Templates
+- Copy-to-Clipboard Option
+- Multiple Language Support
+
+## Version History
+
+### V0
+- Basic AI email generation
+
+### V1
+- Email type selection
+- Tone selection
+- Save email to file
+- Improved user experience
 
 ## Author
 Kubre Shivaganga
 
 ## License
-This project is created for educational and learning purposes.
+This project is for educational and learning purposes.
